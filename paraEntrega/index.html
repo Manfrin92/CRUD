@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Testes 30/01 </title>
+
+</head>
+
+<style>
+
+p {
+    font-weight: bold;
+    color: darkslategrey;
+}
+
+h1 {
+    font-size: 28px;
+    color: darkslategrey;
+}
+
+h5 {
+    font-size: 16px;
+    color: darkslategrey;
+}
+
+input[type=text], input[type=email] {
+    width: 20%;
+    
+
+}
+
+</style>
+
+
+
+<body>
+
+    <a href="listar.php"> Listar cadastros</a>
+
+    <h1> Teste de cadastro - CREATE </h1>
+
+    <form action="cadastra.php" method='POST'>
+
+        <h5>DADOS PARA ENTREGA </h2>
+    
+        <p>Nome: <input type="text" name='tNome' required> </p>
+        <p>Endereço: <input type="text" name='tEndereco'></p>
+        <p>Bairro: <input type="text" name='tBairro'></p>
+        <p>CEP: <input type="number" name="tCep"> </p>
+        <p>Cidade: <input type="text" name='tCidade'> </p>
+        <p>UF: <input type="text" name='tUf'> </p>
+        <p>E-mail: <input type="email" name="tEmail" required> </p>
+        <p>Telefone: <input type="text" name="tTelefone" required> </p>
+
+        <h5>DADOS PARA PRODUÇÃO </h5>
+
+        <p> Tipo Revestinha <input type="radio" name="tTipoRevestinha" value='Convite' > Convite 
+                            <input type="radio" name="tTipoRevestinha" value='Lembranca'> Lembrança 
+                            <input type="radio" name="tTipoRevestinha" value='Convite-Lembranca'> Convite-Lembrança
+        </p> 
+
+        <p>Quantidade: <input type="number" name='tQuantidade'></p>
+        
+        
+
+        <p>Atrações: <input type="text" name='tAtracoes'> </p>
+
+        <p> <input type="checkbox" name='tSugestoes' value='sim'> Aceito sugestões de texto para a capa</p> 
+
+        <p>Imagens: <input type="file" name="tImagem"> </p> 
+
+        <input type="submit" value="Continuar">
+        
+    </form>
+
+</body>
+
+</html>
