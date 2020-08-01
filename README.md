@@ -1,5 +1,5 @@
 # CRUD
-First Create Read Update Delete
+Create Read Update Delete
 
 
 Project made with HTML, CSS, PHP
